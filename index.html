@@ -120,4 +120,30 @@ active learning and traditional machine learning approaches. Our results show th
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert Input Text</title>
+</head>
+<body>
+    <imput type="text" id="textInput" placeholder="Enter text">
+    <button id+"alertButton"> Show Alert</button>
+
+    <script>
+         // Get references to input field and button
+         Var input = document.getElementById("textInput")
+         Var button = document.getElementById("alertButton")
+
+         //Function to show an alert with the imput text
+         function showAlert() {
+              Var inputText = input.value;
+              alert("You entered: " + inputText)
+         }
+
+         // Add a click event listener to the button
+         button.addEventListener("click", showAlert);
+    </script>
+</body>
+</html>
+     
 
