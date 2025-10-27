@@ -100,79 +100,29 @@ active learning and traditional machine learning approaches. Our results show th
   <title>Change Button Colour</title>
 </head>
 <body>
-  <button id="colorButton">Click me to change colour</button>
+  <button id="colorButton" onclick="changeColor()">Click me to change colour</button>
 
 <script>
   // Get a reference to the button element
-  Var button = document.getElementById("colorButton");
+  var button = document.getElementById("colorButton");
      
   // Function to change the button color
-  Function changeColor() {
+  function changeColor() {
     // Generate a random color (hexadecimal)
-    Var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
        
     // Set the button's background color to the random color
     button.style.backgroundColor = randomColor;
    }
-     
-   // Add a click event listener to the button
-   button.addEventListener("click", changeColor);
- </script>
+</script>
 </body>
 </html>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Alert Input Text</title>
+ <title>Total word count</title>
 </head>
-<body>
-    <imput type="text" id="textInput" placeholder="Enter text">
-    <button id+"alertButton"> Show Alert</button>
-
-    <script>
-         // Get references to input field and button
-         Var input = document.getElementById("textInput");
-         Var button = document.getElementById("alertButton");
-
-         // Function to show an alert with the imput text
-         Function showAlert() {
-              Var inputText = input.value;
-              alert("You entered: " + inputText);
-         }
-
-         // Add a click event listener to the button
-         button.addEventListener("click", showAlert);
-    </script>
-</body>
-</html>
-
-<!DOCTYPE>
-<html>
-<head>
-    <title>Random Number Generator</title>
-</head>
-<body>
-    <button id="generateButton">Generate Random Number</button>
-    <p id="randomNumber"></p>
-
-    <script>
-        // Get a reference to the button and paragraph
-        Var button = document.getElementById("generateButton");
-        Var paragraph = document.getElementById("randomNumber");
-
-        // Function to generate and display a random number
-        Function generateRandomNumber() {
-            Var randomNumber = Math.floor(Math.random() * 10) + 1;
-            paragraph.textContext = "Random Number: " + randomNumber;
-        }
-
-        // Add a click event listner to the button
-        button.addEventListner("click", generateRandomNumber);
-    </script>
-</body>
-</html>
-
 <p id="totalWordCount"></p>
 <hr>
 <script>
@@ -200,6 +150,7 @@ active learning and traditional machine learning approaches. Our results show th
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+</html>
      
  <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
