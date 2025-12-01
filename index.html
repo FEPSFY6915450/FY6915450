@@ -79,18 +79,19 @@
 </p>
 <h3>
 <h3 id="Abstract">Abstract</h3>
-<p class="ex1">
-<pre>
 This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous
 classifying pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared
 to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets.
 We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
 active learning and traditional machine learning approaches. Our results show that...We conclude that...
-</pre>
 </p>
 
 <h3 id="Introduction">Introduction</h3>
+  <pre id="Introduction">
+  </pre>
 <h3 id=”Analysis and discussion”>Analysis and discussion</h3> 
+  <p id="Analysis and discussion">
+  </p>
 <h3 id="References">References</h3>
 <a href=”url”>https://openurl.ebsco.com/c/uk4gxj/openurl?sid=ebsco:plink:entitlement&id=ebsco:pdh:2026%2D57929%2D001</a>
 
@@ -118,11 +119,7 @@ active learning and traditional machine learning approaches. Our results show th
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
- <title>Total word count</title>
-</head>
+<!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
 <script>
@@ -140,8 +137,8 @@ active learning and traditional machine learning approaches. Our results show th
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("Introduction");
+    const AnalysisCount = displayWordCount("Analysis and discussion");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
@@ -150,7 +147,6 @@ active learning and traditional machine learning approaches. Our results show th
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
-</html>
      
  <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
