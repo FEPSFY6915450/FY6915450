@@ -107,8 +107,9 @@ However there are  assumptions behind this. Firstly, the gamehost will always op
 <p>
 There is many ways to mathematically prove this. One way is using Bayes’ theorem, which states:
 <img src="Bayes'_Thoerem.png" alt="Bayes'Theorem">
-If one door contained the grand prize, cash prize (CP), and the other two doors contained goats (G), Initially P(choosing CP) = ⅓ and P(choosing G) = ⅔.Therefore:
-<img src="Monty_Hall_Problem.png" alt="MontyHallProblem">
+If one door contained the grand prize, cash prize (CP), and the other two doors contained goats (G), Initially P(choosing CP) = ⅓ and P(choosing G) = ⅔.
+<img src="Monty_Hall_Problem.png" alt="Bayes'Theorem">
+Therefore, The probability that the cash prize is behind door number 1 given that the host opens door number 3 is equal to the probability of the host opeing door number 3 given that the cash prize is behind door number 1 times by the probability of the cash prize being beind door number 1 divided by the probability that the host opens door number 3.
 For this example the contestant has chosen door number 1. Using this information to assign the conditional probability the values are: P(host opens door number 3| CP is behind door number 1) = ½, P(host opens door number 3| CP is behind door 2) = 1 and P(host opens door number 3| CP is behind door number 3) = 0. Therefore, P(CP behind door number 1| host opens door number 3 = 1/2  1/31/2= 2/3
 Therefore switching doors increases the contestants probability of winning from one-third to two-thirds, demonstrating how probability theory can reveal outcomes that contradict human intuition.
 </p>
